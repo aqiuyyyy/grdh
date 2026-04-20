@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的个人导航</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg"></div>
+  <main class="app">
+    <header class="hero">
+      <div>
+        <h1>我的个人导航</h1>
+        <p>快速访问常用网站、工具与项目。</p>
+      </div>
+      <div class="top-actions">
+        <button id="themeToggle" class="btn">切换主题</button>
+      </div>
+    </header>
+
+    <section class="panel search-panel">
+      <input id="searchInput" type="text" placeholder="搜索站点、工具、项目..." />
+      <div id="clock" class="clock"></div>
+    </section>
+
+    <section class="section">
+      <h2>常用网站</h2>
+      <div class="grid" id="linksGrid">
+        <a class="card" href="https://github.com" target="_blank" data-keywords="github 代码 仓库">
+          <div class="icon">GH</div>
+          <div class="card-content">
+            <h3>GitHub</h3>
+            <p>代码仓库与项目管理</p>
+          </div>
+        </a>
+
+        <a class="card" href="https://mail.google.com" target="_blank" data-keywords="邮箱 gmail 邮件">
+          <div class="icon">EM</div>
+          <div class="card-content">
+            <h3>邮箱</h3>
+            <p>快速打开邮件收件箱</p>
+          </div>
+        </a>
+
+        <a class="card" href="https://www.notion.so" target="_blank" data-keywords="notion 笔记 文档">
+          <div class="icon">NT</div>
+          <div class="card-content">
+            <h3>Notion</h3>
+            <p>笔记、任务与知识管理</p>
+          </div>
+        </a>
+
+        <a class="card" href="https://chat.openai.com" target="_blank" data-keywords="ai openai 对话">
+          <div class="icon">AI</div>
+          <div class="card-content">
+            <h3>AI 工具</h3>
+            <p>常用 AI 助手入口</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>工作学习</h2>
+      <div class="grid" id="workGrid">
+        <a class="card" href="https://calendar.google.com" target="_blank" data-keywords="日历 会议 安排">
+          <div class="icon">CL</div>
+          <div class="card-content">
+            <h3>日历</h3>
+            <p>查看日程安排</p>
+          </div>
+        </a>
+
+        <a class="card" href="https://docs.google.com" target="_blank" data-keywords="文档 docs 写作">
+          <div class="icon">DC</div>
+          <div class="card-content">
+            <h3>文档</h3>
+            <p>在线写作与协作</p>
+          </div>
+        </a>
+
+        <a class="card" href="https://www.figma.com" target="_blank" data-keywords="设计 figma 原型">
+          <div class="icon">FG</div>
+          <div class="card-content">
+            <h3>Figma</h3>
+            <p>界面设计与原型</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Powered by GitHub Pages</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
